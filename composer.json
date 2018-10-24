@@ -1,9 +1,9 @@
 {
-    "name": "kint-php/kint",
+    "name": "treecode-ru/kint",
     "description": "Kint - debugging tool for PHP developers",
     "keywords": ["kint", "php", "debug"],
     "type": "library",
-    "homepage": "https://kint-php.github.io/kint/",
+    "homepage": "https://github.com/treecode-ru/kint",
     "license": "MIT",
     "authors": [
         {
@@ -17,6 +17,10 @@
         {
             "name": "Contributors",
             "homepage": "https://github.com/kint-php/kint/graphs/contributors"
+        },
+        {
+            "name": "Fork",
+            "homepage": "https://github.com/treecode-ru"
         }
     ],
     "require": {
