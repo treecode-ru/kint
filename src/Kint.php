@@ -126,6 +126,7 @@ class Kint
      */
     public static $aliases = array(
         array('Kint\\Kint', 'dump'),
+        array('Kint\\Kint', 'dumpd'),
         array('Kint\\Kint', 'trace'),
         array('Kint\\Kint', 'dumpArray'),
     );
@@ -627,6 +628,19 @@ class Kint
         }
 
         return 0;
+    }
+
+    /**
+     * Dumps some data with die()
+     *
+     * Functionally equivalent to Kint::dump(1) or Kint::dump(debug_backtrace(true))
+     *
+     * @return int|string
+     */
+    public static function dumpd(){
+
+        self::dump();
+        die();
     }
 
     /**
