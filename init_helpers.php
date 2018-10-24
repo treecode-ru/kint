@@ -41,20 +41,20 @@ if (!\function_exists('d')) {
     Kint::$aliases[] = 'd';
 }
 
-if (!\function_exists('dd')) {
+if (!\function_exists('ddd')) {
     /**
      * Alias of Kint::dumpd().
      *
      * @return int|string
      */
-    function dd()
+    function ddd()
     {
         $args = \func_get_args();
 
         return \call_user_func_array(array('Kint', 'dumpd'), $args);
     }
 
-    Kint::$aliases[] = 'dd';
+    Kint::$aliases[] = 'ddd';
 }
 
 if (!\function_exists('s')) {
