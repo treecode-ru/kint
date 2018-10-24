@@ -31,9 +31,9 @@ composer require kint-php/kint --dev
 
 ```php
 <?php
-
 Kint::dump($GLOBALS, $_SERVER); // pass any number of parameters
 d($GLOBALS, $_SERVER); // or simply use d() as a shorthand
+dd($_REQUEST); // with die()
 
 Kint::trace(); // Debug backtrace
 d(1); // Debug backtrace shorthand
