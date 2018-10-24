@@ -639,7 +639,8 @@ class Kint
      */
     public static function dumpd(){
 
-        self::dump();
+        $args = \func_get_args();
+        self::dump($args);
         die();
     }
 
